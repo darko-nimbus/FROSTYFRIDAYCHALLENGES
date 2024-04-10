@@ -1,4 +1,7 @@
--- Creating user --
+--------------
+-- SOLUTION --
+--------------
+
 CREATE OR REPLACE USER user1 
 PASSWORD = 'abc123'
 ;
