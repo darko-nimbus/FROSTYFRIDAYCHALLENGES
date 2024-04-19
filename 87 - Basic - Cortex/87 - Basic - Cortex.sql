@@ -1,4 +1,10 @@
+-- SET DATABASE 
+USE DATABASE FROSTYFRIDAY;
+
+-----------------
 --START UP CODE--
+-----------------
+
 CREATE OR REPLACE TABLE WEEK_87 AS
 SELECT 
   'Happy Easter' AS greeting,
@@ -7,7 +13,10 @@ SELECT
 --CHECK--
 SELECT * FROM week_87;
 
+------------
 --SOLUTION--
+------------
+
 SELECT 
   value::VARCHAR AS language_code, 
   SNOWFLAKE.CORTEX.TRANSLATE(greeting, 'en', value) AS translated_greeting
